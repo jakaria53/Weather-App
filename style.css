@@ -1,47 +1,98 @@
 body{
-       background: linear-gradient(to bottom right, #000080, rgb(236, 236, 234), #000080);
-    }
+    background: linear-gradient(to bottom right, #000080, rgb(236, 236, 234), #000080);
+}
+
 .box{
     background: linear-gradient(to bottom right, #ff8989, rgb(236, 236, 234), #e72b73);
-  width: 300px;
-  border: 15px solid transparent; 
-  border-image: linear-gradient(45deg, skyblue, #4baae9) 1;
-  padding: 150px;
-  margin: 75px 50px 75px 300px;
+    width: 300px;
+    border: 15px solid transparent; 
+    border-image: linear-gradient(45deg, skyblue, #4baae9) 1;
+    padding: 150px;
+    margin: 75px 50px 75px 300px;
 }
+
 .button {
-  background-color: #ffffff; 
-  border: 2px solid #09efff;
-  color: rgb(0, 0, 0);
-  padding: 10px 20px;
- 
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 70px;
-  opacity: 0.6;
-  transition: 0.3s;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
+    background-color: #ffffff; 
+    border: 2px solid #09efff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 70px;
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
 }
-.button:hover {opacity: 1}
+
+.button:hover {
+    opacity: 1;
+}
+
 #level{
-     width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
+
 h1{
     color: azure;
     font-size:40px;
-   
 }
+
 #info{
     color: #747272;
     font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .box {
+        width: 80%;
+        margin: 50px auto;
+        padding: 100px 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .button {
+        margin: 10px auto;
+        display: block;
+    }
+
+    #level {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 95%;
+        margin: 20px auto;
+        padding: 50px 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 8px 16px;
+        margin: 8px auto;
+        display: block;
+    }
+
+    #info {
+        font-size: 16px;
+        text-align: center;
+    }
 }
